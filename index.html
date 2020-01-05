@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Tyler Kinsherf | Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel&display=swap">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: 'Cinzel', serif;}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar Menu -->
+<nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none">
+        <img src="./images/pantheon-logo-circle.png" alt="P-Logo" style="width:100%">
+    </a>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"></a>
+    <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">News</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+    <a href="#raiding" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Raiding</a>
+    <a href="#dkp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DKP</a>
+    <a href="#rules" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rules</a>
+    <a href="#discord" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Discord</a>
+  </div>
+</nav>
+
+<!-- Mobile Stuff -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Pantheon | WoW-Blaumeux</span>
+</header>
+
+<!-- More Mobile Stuff -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Body -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+  <!-- Banner -->
+  <div class="w3-container" style="margin-top:80px" id="">
+      <img src="./images/wow-png-banner.png" alt="D-Ico" style="width:100%">
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" id="news" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: rgb(216, 170, 72)"><b>News</b></h1>
+      <hr style="width:60%px;border:5px solid rgb(161, 112, 112)" class="w3-round">
+
+      <iframe src="./new-feed.html" width="90%" height="500px" scrolling="yes">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+
+  </div>
+
+  <!-- About -->
+  <div class="w3-container" id="about" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: rgb(216, 170, 72)"><b>About</b></h1>
+      <hr style="width:60%px;border:5px solid rgb(161, 112, 112)" class="w3-round">
+    <p>About Placeholder</p>
+  </div>
+
+  <!-- About Card -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./images/pantheon-logo-circle.png" alt="Pantheon" style="width:25%">
+        <div class="w3-container">
+          <h3>THE GUILD</h3>
+          <p class="w3-opacity">Founded: MM/DD/YYYY</p>
+          <p>Info Info Info Info ... </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Raiding -->
+  <div class="w3-container" id="raiding" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: rgb(216, 170, 72)"><b>Raid Info</b></h1>
+      <hr style="width:60%px;border:5px solid rgb(161, 112, 112)" class="w3-round">
+    <h2>Molten Core</h2>
+      <p>Expectations Information</p>
+    <br>
+    <h2>Onyxia</h2>
+      <p>Expectations Information</p>
+  </div>
+
+  <!-- DKP -->
+  <div class="w3-container" id="dkp" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: rgb(216, 170, 72)"><b>DKP</b></h1>
+      <hr style="width:60%px;border:5px solid rgb(161, 112, 112)" class="w3-round">
+    <p>DKP Rules </p>
+    <p>DKP ADDON - LINK to Download</p>
+
+    <div id="dkp-stream">
+      <h3>Insert Live Stream of DKP info here?</h3>
+    </div>
+  </div>
+
+  <!-- Rules -->
+  <div class="w3-container" id="rules" style="margin-top:75px">
+      <h1 class="w3-xxxlarge" style="color: rgb(216, 170, 72)"><b>Guild Rules</b></h1>
+      <hr style="width:60%px;border:5px solid rgb(161, 112, 112)" class="w3-round">
+    <h1>Rules</h1></br>
+      <ul>
+        <li><b>Rule #1</b> - Blah blah blah blah blah blah blah blah </li>
+        <li><b>Rule #2</b> - Blah blah blah blah blah blah blah blah </li>
+        <li><b>Rule #3</b> - Blah blah blah blah blah blah blah blah </li>
+      </ul>
+  </div>
+
+  <!-- Discord -->
+  <div class="w3-container" id="discord" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: rgb(216, 170, 72)"><b>Discord</b></h1>
+    <hr style="width:60%px;border:5px solid rgb(161, 112, 112)" class="w3-round">
+
+    <a href="https://discord.gg/Zyds3PA">
+      <img src="./images/discord-512.png" alt="D-Ico" style="width:5%"><p>Click to Join</p>
+    </a>
+
+    <div>
+        <iframe src="https://discordapp.com/widget?id=654223366978535435&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Created by Xam 2020</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
